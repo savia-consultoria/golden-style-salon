@@ -102,8 +102,8 @@ export default function Hero() {
           <div className="relative animate-slide-up-delay">
             <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2.5rem] shadow-card-hover sm:max-w-lg">
               <Image
-                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=85&auto=format&fit=crop"
-                alt="Cliente disfrutando un servicio profesional en Golden Style Salon"
+                src="https://images.unsplash.com/photo-1606251706444-d069cd266189?w=900&q=85&auto=format&fit=crop"
+                alt="Peinado elegante de novia con recogido refinado por Golden Style Salon"
                 fill
                 sizes="(max-width: 1024px) 100vw, 480px"
                 className="object-cover"

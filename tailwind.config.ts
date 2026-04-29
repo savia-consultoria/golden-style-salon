@@ -9,16 +9,16 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          primary: "#8B5E8C",
-          "primary-dark": "#6E4670",
-          "primary-light": "#B084B1",
-          accent: "#E8A598",
-          "accent-dark": "#D88A7A",
-          "accent-light": "#F2C7BC",
-          background: "#FDF6F0",
-          cream: "#FAEFE5",
-          ink: "#2A1F2A",
-          muted: "#7A6A7A",
+          primary: "#C5A059",
+          "primary-dark": "#997A3F",
+          "primary-light": "#DDC288",
+          accent: "#D9A679",
+          "accent-dark": "#C18F61",
+          "accent-light": "#ECC8A6",
+          background: "#FDF8EE",
+          cream: "#FAF1DE",
+          ink: "#2A2418",
+          muted: "#7A6F58",
         },
       },
       fontFamily: {
@@ -26,10 +26,10 @@ const config: Config = {
         sans: ["var(--font-dmsans)", "DM Sans", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 8px 24px rgba(139, 94, 140, 0.08), 0 2px 6px rgba(139, 94, 140, 0.05)",
-        glow: "0 12px 40px rgba(232, 165, 152, 0.25), 0 4px 12px rgba(139, 94, 140, 0.1)",
+        soft: "0 8px 24px rgba(197, 160, 89, 0.10), 0 2px 6px rgba(197, 160, 89, 0.06)",
+        glow: "0 12px 40px rgba(217, 166, 121, 0.28), 0 4px 12px rgba(197, 160, 89, 0.12)",
         "card-hover":
-          "0 18px 48px rgba(139, 94, 140, 0.18), 0 6px 16px rgba(139, 94, 140, 0.08)",
+          "0 18px 48px rgba(197, 160, 89, 0.20), 0 6px 16px rgba(197, 160, 89, 0.10)",
       },
       animation: {
         "fade-in": "fadeIn 0.7s ease-out forwards",
@@ -65,7 +65,7 @@ const config: Config = {
         "gradient-radial":
           "radial-gradient(ellipse at top, var(--tw-gradient-stops))",
         "hero-glow":
-          "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(232, 165, 152, 0.35), transparent 70%)",
+          "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(217, 166, 121, 0.38), transparent 70%)",
       },
     },
   },

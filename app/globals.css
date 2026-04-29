@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #8b5e8c;
-  --color-accent: #e8a598;
-  --color-background: #fdf6f0;
-  --color-ink: #2a1f2a;
+  --color-primary: #c5a059;
+  --color-accent: #d9a679;
+  --color-background: #fdf8ee;
+  --color-ink: #2a2418;
 }
 
 html {
@@ -75,6 +75,6 @@ body {
 }
 
 ::selection {
-  background-color: rgba(232, 165, 152, 0.4);
-  color: #2a1f2a;
+  background-color: rgba(217, 166, 121, 0.4);
+  color: #2a2418;
 }

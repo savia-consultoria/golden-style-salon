@@ -185,7 +185,7 @@ export default function Contact() {
                     name="service"
                     required
                     defaultValue=""
-                    className="input-base appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22 fill=%22%238B5E8C%22><path fill-rule=%22evenodd%22 d=%22M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z%22 clip-rule=%22evenodd%22/></svg>')] bg-[length:1.25rem_1.25rem] bg-[right_1rem_center] bg-no-repeat pr-12"
+                    className="input-base appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22 fill=%22%23C5A059%22><path fill-rule=%22evenodd%22 d=%22M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z%22 clip-rule=%22evenodd%22/></svg>')] bg-[length:1.25rem_1.25rem] bg-[right_1rem_center] bg-no-repeat pr-12"
                   >
                     <option value="" disabled>
                       Elige un servicio
@@ -237,18 +237,18 @@ export default function Contact() {
         .input-base {
           width: 100%;
           border-radius: 0.875rem;
-          border: 1px solid rgba(139, 94, 140, 0.18);
+          border: 1px solid rgba(197, 160, 89, 0.22);
           background-color: #fff;
           padding: 0.875rem 1rem;
           font-size: 0.95rem;
-          color: #2a1f2a;
+          color: #2a2418;
           transition: border-color 0.2s, box-shadow 0.2s;
         }
-        .input-base::placeholder { color: #b8a8b8; }
+        .input-base::placeholder { color: #b8a878; }
         .input-base:focus {
           outline: none;
-          border-color: #8b5e8c;
-          box-shadow: 0 0 0 3px rgba(139, 94, 140, 0.15);
+          border-color: #c5a059;
+          box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.18);
         }
       `}</style>
     </section>
