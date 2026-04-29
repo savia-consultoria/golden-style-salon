@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #8b5e8c;
+  --color-accent: #e8a598;
+  --color-background: #fdf6f0;
+  --color-ink: #2a1f2a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-ink);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .container-tight {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-primary px-7 py-3.5 text-sm font-medium tracking-wide text-white shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-primary-dark hover:shadow-card-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 focus-visible:ring-offset-brand-background sm:text-base;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-accent px-7 py-3.5 text-sm font-medium tracking-wide text-white shadow-glow transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-accent-dark hover:shadow-card-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent focus-visible:ring-offset-2 focus-visible:ring-offset-brand-background sm:text-base;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary/25 bg-white/60 px-7 py-3.5 text-sm font-medium tracking-wide text-brand-primary backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-primary hover:bg-white hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 sm:text-base;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-brand-primary/15 bg-white/70 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-brand-primary backdrop-blur;
+  }
+
+  .section {
+    @apply scroll-mt-24 py-20 sm:py-24 lg:py-28;
+  }
+
+  .heading-display {
+    @apply font-display text-4xl font-semibold leading-[1.05] tracking-tight text-brand-ink sm:text-5xl lg:text-[3.75rem];
+  }
+
+  .heading-section {
+    @apply font-display text-3xl font-semibold leading-tight tracking-tight text-brand-ink sm:text-4xl lg:text-[2.75rem];
+  }
+
+  .text-lede {
+    @apply text-base leading-relaxed text-brand-muted sm:text-lg;
+  }
+
+  .card-soft {
+    @apply rounded-3xl border border-brand-primary/10 bg-white/80 p-6 shadow-soft backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/20 hover:shadow-card-hover sm:p-8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background-color: rgba(232, 165, 152, 0.4);
+  color: #2a1f2a;
+}
