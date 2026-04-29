@@ -131,21 +131,6 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="absolute -right-2 top-8 hidden rounded-3xl border border-brand-primary/10 bg-white/95 p-4 shadow-soft backdrop-blur sm:block sm:-right-6 lg:-right-10">
-              <div className="flex items-center gap-3">
-                <span className="grid h-11 w-11 place-items-center rounded-2xl bg-brand-primary/15 text-brand-primary">
-                  <Star className="h-5 w-5 fill-current" strokeWidth={1.75} />
-                </span>
-                <div>
-                  <p className="text-xs uppercase tracking-[0.18em] text-brand-muted">
-                    Top rated
-                  </p>
-                  <p className="font-display text-base font-semibold text-brand-ink">
-                    4.7★ Google
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

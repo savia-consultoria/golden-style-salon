@@ -1,13 +1,7 @@
 import Image from "next/image";
-import { Award, HeartHandshake, ShieldCheck, Clock4, Star } from "lucide-react";
+import { HeartHandshake, ShieldCheck, Clock4 } from "lucide-react";
 
 const REASONS = [
-  {
-    icon: Award,
-    title: "Altamente valoradas",
-    description:
-      "4.7★ en Google con más de 136 clientas que recomiendan nuestro trabajo.",
-  },
   {
     icon: HeartHandshake,
     title: "Trato cálido y cercano",
@@ -43,20 +37,6 @@ export default function WhyChooseUs() {
                 className="object-cover"
               />
             </div>
-
-            <div className="absolute bottom-6 right-2 hidden w-56 rounded-3xl border border-brand-primary/10 bg-white/95 p-4 shadow-soft sm:block sm:-bottom-8 sm:-right-6 lg:-right-10">
-              <div className="flex items-center gap-1 text-amber-400">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-current" />
-                ))}
-              </div>
-              <p className="mt-2 font-display text-2xl font-semibold text-brand-ink">
-                4.7 / 5
-              </p>
-              <p className="text-xs text-brand-muted">
-                en 136 reseñas de Google
-              </p>
-            </div>
           </div>
 
           <div>
@@ -72,13 +52,13 @@ export default function WhyChooseUs() {
               relajante y a la altura de lo que mereces.
             </p>
 
-            <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+            <ul className="mt-10 grid gap-4 sm:grid-cols-3">
               {REASONS.map((reason) => {
                 const Icon = reason.icon;
                 return (
                   <li
                     key={reason.title}
-                    className="flex gap-4 rounded-2xl border border-brand-primary/10 bg-white/70 p-5 backdrop-blur transition hover:border-brand-primary/20 hover:bg-white"
+                    className="flex h-full flex-col gap-4 rounded-2xl border border-brand-primary/10 bg-white/70 p-5 backdrop-blur transition hover:border-brand-primary/20 hover:bg-white"
                   >
                     <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-brand-primary/10 text-brand-primary">
                       <Icon className="h-5 w-5" strokeWidth={1.75} />
@@ -95,33 +75,6 @@ export default function WhyChooseUs() {
                 );
               })}
             </ul>
-
-            <div className="mt-10 grid grid-cols-3 gap-4 rounded-3xl border border-brand-primary/10 bg-white/70 p-6 text-center backdrop-blur sm:gap-6">
-              <div>
-                <p className="font-display text-3xl font-semibold text-brand-primary sm:text-4xl">
-                  4.7★
-                </p>
-                <p className="mt-1 text-xs uppercase tracking-[0.16em] text-brand-muted">
-                  Google
-                </p>
-              </div>
-              <div className="border-x border-brand-primary/10">
-                <p className="font-display text-3xl font-semibold text-brand-primary sm:text-4xl">
-                  136+
-                </p>
-                <p className="mt-1 text-xs uppercase tracking-[0.16em] text-brand-muted">
-                  Reseñas
-                </p>
-              </div>
-              <div>
-                <p className="font-display text-3xl font-semibold text-brand-primary sm:text-4xl">
-                  100%
-                </p>
-                <p className="mt-1 text-xs uppercase tracking-[0.16em] text-brand-muted">
-                  Dedicación
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
